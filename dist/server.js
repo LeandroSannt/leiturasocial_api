@@ -3,16 +3,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var cors_1 = __importDefault(require("cors"));
 /* eslint-disable import/no-unresolved */
 var dotenv_1 = __importDefault(require("dotenv"));
-require("reflect-metadata");
-require("dotenv/config");
 var express_1 = __importDefault(require("express"));
-var cors_1 = __importDefault(require("cors"));
-require("express-async-errors");
 var AppErros_1 = __importDefault(require("./errors/AppErros"));
 var routes_1 = __importDefault(require("./routes"));
 require("./database");
+require("dotenv/config");
+require("express-async-errors");
+require("reflect-metadata");
 var app = (0, express_1.default)();
 app.use((0, cors_1.default)());
 app.disable('x-powered-by');
@@ -33,7 +33,6 @@ app.use(function (err, request, response, next) {
     });
 });
 dotenv_1.default.config();
-console.log(process.env.NODE_ENV);
 app.listen(4000, function () {
     console.log("server is running in port 4000");
 });

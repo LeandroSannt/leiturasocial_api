@@ -41,19 +41,20 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.BooksServices = void 0;
 var typeorm_1 = require("typeorm");
+var AppErros_1 = __importDefault(require("../../errors/AppErros"));
 var BooksRepository_1 = require("../../repositories/BooksRepository");
 var readPdf_1 = require("./readPdf");
-var AppErros_1 = __importDefault(require("../../errors/AppErros"));
 var BooksServices = /** @class */ (function () {
     function BooksServices() {
     }
     BooksServices.prototype.create = function (_a) {
         var photo = _a.photo, category_id = _a.category_id, pdfBook = _a.pdfBook, sinopse = _a.sinopse;
         return __awaiter(this, void 0, void 0, function () {
-            var booksRepository, readPdf, pdf, createBook, save;
+            var teste, booksRepository, readPdf, pdf, createBook, save;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
+                        teste = "a";
                         booksRepository = (0, typeorm_1.getCustomRepository)(BooksRepository_1.BooksRepository);
                         readPdf = new readPdf_1.read();
                         return [4 /*yield*/, readPdf.read(pdfBook)

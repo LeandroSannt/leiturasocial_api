@@ -1,25 +1,21 @@
 {
   "compilerOptions": {
-    "target": "es5",
     "module": "commonjs",
+    "target": "es5",
     "outDir": "./dist",
     "rootDir": "./src",
-    "baseUrl": "./src",
-    "allowJs": true,
     "strict": false,
-    "strictPropertyInitialization": false,
+     "strictPropertyInitialization": false,
+    "baseUrl": "./src",
+    "paths": {
+      "@modules/*": ["modules/*"],
+      "@config/*": ["config/*"],
+      "@shared/*": ["shared/*"]
+    },
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
-    "paths": {
-      "@modules/*": ["modules/*"],
-      "@config/*": ["configs/*"],
-      "@shared/*": ["shared/*"],
-      "@database/*": ["database/*"],
-      "@util/*": ["util/*"]
-    }
+    "forceConsistentCasingInFileNames": true
   }
 }
