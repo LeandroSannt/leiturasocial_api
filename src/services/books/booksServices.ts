@@ -20,6 +20,7 @@ interface RequestUpdate{
 
 class BooksServices{
   public async create({photo,category_id,pdfBook,sinopse}:Request){
+    const teste = "a"
 
     const booksRepository = getCustomRepository(BooksRepository)
     const readPdf = new read()
