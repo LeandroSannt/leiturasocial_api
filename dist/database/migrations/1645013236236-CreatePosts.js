@@ -53,7 +53,6 @@ var CreatePosts1645013236236 = /** @class */ (function () {
                                     type: 'uuid',
                                     isPrimary: true,
                                     generationStrategy: 'uuid',
-                                    default: 'uuid_generate_v4()'
                                 },
                                 {
                                     name: 'description',

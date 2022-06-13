@@ -53,7 +53,6 @@ var UserBook1651661535850 = /** @class */ (function () {
                                     type: 'uuid',
                                     isPrimary: true,
                                     generationStrategy: 'uuid',
-                                    default: 'uuid_generate_v4()'
                                 },
                                 {
                                     name: 'book_id',

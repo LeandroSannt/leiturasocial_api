@@ -53,7 +53,6 @@ var CreateBooks1648678263865 = /** @class */ (function () {
                                     type: 'uuid',
                                     isPrimary: true,
                                     generationStrategy: 'uuid',
-                                    default: 'uuid_generate_v4()'
                                 },
                                 {
                                     name: 'title',

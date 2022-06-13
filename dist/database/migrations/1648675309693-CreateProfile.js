@@ -53,7 +53,6 @@ var CreateProfile1648675309693 = /** @class */ (function () {
                                     type: 'uuid',
                                     isPrimary: true,
                                     generationStrategy: 'uuid',
-                                    default: 'uuid_generate_v4()'
                                 },
                                 {
                                     name: 'name',

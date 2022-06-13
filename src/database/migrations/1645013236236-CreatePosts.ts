@@ -1,4 +1,4 @@
-import {MigrationInterface, QueryRunner,Table} from "typeorm";
+import { MigrationInterface, QueryRunner, Table } from "typeorm";
 
 export class CreatePosts1645013236236 implements MigrationInterface {
 
@@ -12,7 +12,6 @@ export class CreatePosts1645013236236 implements MigrationInterface {
               type:'uuid',
               isPrimary:true,
               generationStrategy:'uuid',
-              default:'uuid_generate_v4()'
             },
 
             {

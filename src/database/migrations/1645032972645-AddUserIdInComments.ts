@@ -1,4 +1,4 @@
-import {MigrationInterface, QueryRunner,TableColumn,TableForeignKey} from "typeorm";
+import { MigrationInterface, QueryRunner, TableColumn, TableForeignKey } from "typeorm";
 
 export class AddUserIdInComments1645032972645 implements MigrationInterface {
 
