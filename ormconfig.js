@@ -20,8 +20,7 @@ if(ambiente === 'development'){
 }else{
   module.exports ={
   "extra":{
-    "ssl":"true",
-    "rejectUnauthorized":"false"
+    "ssl":"true"
   },
   "type":"postgres",
   "url":process.env.DATABASE_URL,
