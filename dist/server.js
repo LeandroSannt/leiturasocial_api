@@ -33,6 +33,6 @@ app.use(function (err, request, response, next) {
     });
 });
 dotenv_1.default.config();
-app.listen(4000, function () {
+app.listen(process.env.PORT || 4000, function () {
     console.log("server is running in port 4000");
 });

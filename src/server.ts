@@ -41,6 +41,6 @@ app.use(
 )
 dotenv.config()
 
-app.listen(4000, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log(`server is running in port 4000`)
 })
