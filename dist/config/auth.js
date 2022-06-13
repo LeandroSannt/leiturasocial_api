@@ -3,6 +3,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = {
     jwt: {
         secret: '2abd2d55b3ddafdf2a9050476c19f938',
-        expiresIn: '10d'
+        expiresIn: '1d'
     }
 };
